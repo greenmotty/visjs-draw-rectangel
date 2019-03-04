@@ -1,0 +1,32 @@
+
+<!doctype html>
+<html>
+<head>
+    <title>VisJS - Creating rectangle as group</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./vis.js"></script>
+    <link href="http://visjs.org/dist/vis-network.min.css" rel="stylesheet" type="text/css"/>
+
+    <style type="text/css">
+        #mynetwork {
+            width: 100%;
+            height: 600px;
+            border: 1px solid lightgray;
+        }
+    </style>
+</head>
+<body onload="">
+
+<button id="add-group" onclick="createGroup();">Create group</button>
+<button id="delete-group" onclick="deleteGroup();">Delete group</button>
+<button id="delete-all-groups" onclick="deleteAllGroups();">Delete all groups</button>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button id="reload-page" onclick="location.reload();">Reload</button>
+<div id="mynetwork"></div>
+<pre id="selectedGroup"></pre>
+<pre id="data"></pre>
+<pre id="eventSpan"></pre>
+<script type="text/javascript" src="main.js"></script>
+<script type="text/javascript" src="events.js"></script>
+</body>
+</html>
